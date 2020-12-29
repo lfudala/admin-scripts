@@ -6,6 +6,11 @@
 # This script assumes that ~/cfcli.yml is configured
 # with multi account profiles
 
+if [[ $# -eq 0 ]] ; then
+  echo 'cfcli profile required'
+  exit 1
+fi
+
 # Set
 domainprofile=$1
 outfile=$(printf "%s-cf-records-%s.csv" "$domainprofile" "$(date +%Y%m%dT%H%M%S)")
