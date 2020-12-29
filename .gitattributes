@@ -1,2 +1,3 @@
 # ps1 line ending shouldn't matter, use native
 *.ps1 -text
+*.bat eol=crlf
