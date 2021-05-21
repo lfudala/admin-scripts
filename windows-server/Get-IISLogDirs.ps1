@@ -1,0 +1,1 @@
+ foreach ( $website in $(get-website)) { $logdir="$($website.logFile.directory)\w3svc$($website.id)"; echo $logdir }
