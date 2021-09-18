@@ -1,0 +1,1 @@
+mkpasswd -m sha-512
