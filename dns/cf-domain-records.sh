@@ -18,7 +18,7 @@ outfile=$(printf "%s-cf-records-%s.csv" "$domainprofile" "$(date +%Y%m%dT%H%M%S)
 # Get domains
 mapfile -t domains < <(cfcli -u $domainprofile zones -f csv)
 
-echo "Type,Name,Value,TTL,Active" > $outfile
+echo "Type,Name,Value,TTL,Active,ID" > $outfile
 
 for domain in "${domains[@]}"
 do
